@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnight - Професійний ремонт та збірка комп'ютерної техніки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-content">
+            <a href="#" class="logo">Tech<span>Knight</span></a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav>
+              <ul id="mainMenu">
+                <li><a href="#" class="active">Головна</a></li>
+                <li><a href="page/about_us.html">Про нас</a></li>
+                <li class="has-submenu">
+                  <a href="#services">Послуги</a>
+                  <ul class="submenu">
+                    <li><a href="#repair">Ремонт ПК та ноутбуків</a></li>
+                    <li><a href="#software">Налаштування ПЗ</a></li>
+                    <li><a href="#programming">Програмування під замовлення</a></li>
+                  </ul>
+                </li>
+                <li><a href="#request">Залишити заявку</a></li>
+                <li><a href="#catalog">Каталог ноутбуків</a></li>
+                <li><a href="#configurator">Конфігуратор ПК</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1>Ваш надійний партнер у світі технологій</h1>
+            <p>TechKnight пропонує професійні послуги з ремонту ноутбуків, підбору комп'ютерної техніки, збірки ПК та розробки програмного забезпечення</p>
+            <div class="hero__buttons">
+              <a href="#services" class="btn btn-primary">Наші послуги</a>
+              <a href="#contact" class="btn btn-accent">Зв'язатися з нами</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наші послуги</h2>
+            <p class="section-description">TechKnight надає повний спектр послуг з обслуговування та ремонту комп'ютерної техніки, а також професійну збірку ПК під ваші потреби</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Ремонт ноутбуків</h3>
+                        <p>Професійний ремонт ноутбуків будь-якої складності з гарантією на всі види робіт. Швидка діагностика та якісний сервіс.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Підбір ноутбуків</h3>
+                        <p>Допоможемо підібрати ідеальний ноутбук відповідно до ваших потреб та бюджету. Консультації спеціалістів з великим досвідом.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Збірка ПК</h3>
+                        <p>Професійна збірка комп'ютерів будь-якої складності: ігрові ПК, робочі станції, офісні комп'ютери за оптимальною ціною.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Programming Section -->
+    <section id="programming" class="services" style="background-color: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title">Програмування</h2>
+            <p class="section-description">TechKnight надає послуги з розробки програмного забезпечення для різних платформ та бізнес-завдань</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Веб-розробка</h3>
+                        <p>Створення сучасних веб-сайтів та веб-додатків з адаптивним дизайном та оптимізацією під пошукові системи.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Мобільні додатки</h3>
+                        <p>Розробка нативних та кросплатформних мобільних додатків для Android та iOS з інтуїтивним інтерфейсом.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('/api/placeholder/400/200')"></div>
+                    <div class="service-content">
+                        <h3>Програмні рішення</h3>
+                        <p>Розробка настільних програм та корпоративних рішень для автоматизації бізнес-процесів та підвищення продуктивності.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Про TechKnight</h2>
+                    <p>TechKnight — це компанія, яка спеціалізується на наданні повного спектру послуг у сфері комп'ютерних технологій. Ми займаємося професійним ремонтом ноутбуків, підбором оптимальної комп'ютерної техніки, збіркою персональних комп'ютерів та розробкою програмного забезпечення.</p>
+                    <p>Наша команда складається з кваліфікованих фахівців з багаторічним досвідом роботи, які допоможуть вирішити будь-які технічні проблеми та завдання. Ми прагнемо надавати послуги найвищої якості за доступними цінами, забезпечуючи індивідуальний підхід до кожного клієнта.</p>
+                    <a href="#" class="btn btn-primary">Дізнатися більше</a>
+                </div>
+                <div class="about-img"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Зв'язатися з нами</h2>
+            <p class="section-description">Маєте питання чи потрібна консультація? Заповніть форму нижче, і ми зв'яжемося з вами найближчим часом</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="hidden" name="recipient" value="firefox.corporate@gmail.com">
+                        <div class="form-group">
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Повідомлення</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Контактна інформація</h2>
+                    <p><span class="icon">📱</span> +380 99 123 45 67</p>
+                    <p><span class="icon">✉️</span> firefox.corporate@gmail.com</p>
+                    <p><span class="icon">🏢</span> м. Київ, вул. Технологічна, 12</p>
+                    <p><span class="icon">🕒</span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 15:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Головна</a>
+                <a href="#services">Послуги</a>
+                <a href="#programming">Програмування</a>
+                <a href="#about">Про нас</a>
+                <a href="#contact">Контакти</a>
+            </div>
+            <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
