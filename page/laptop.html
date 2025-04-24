@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Каталог ноутбуків, ремонту, налаштування ПЗ та програмування під замовлення. Купити ноутбук та залишити заявку на ремонт." />
+  <meta name="keywords" content="ноутбуки, ремонт ПК, програмування, каталог ноутбуків, техніка, комп'ютерні послуги" />
+  <meta name="author" content="TechKnight" />
+  <title>Про нас - Комп'ютерна Майстерня</title>
+  <link rel="stylesheet" href="../css/style.css" />
+    <style>
+     @media screen and (max-width: 768px) {
+        .section-title, .section-title-center {
+        margin-top: 30px;
+            font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }  
+     }
+    
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Tech<span>Knight</span></a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="#" class="active">Про нас</a></li>
+            <li class="has-submenu">
+              <a href="#services" class="nav__link">Послуги</a>
+              <button class="submenu-toggle js-submenu-toggle" aria-label="Відкрити підменю">▾</button>
+              <ul class="submenu">
+                <li><a href="#repai">Ремонт ПК та ноутбуків</a></li>
+                <li><a href="#software">Налаштування ПЗ</a></li>
+                <li><a href="#programming">Програмування під замовлення</a></li>
+              </ul>
+            </li>
+            <li><a href="OrderForRepair.html">Залишити заявку</a></li>
+            <li><a href="#">Каталог ноутбуків</a></li>
+            <li><a href="pcConfig.html">Конфігуратор ПК</a></li>
+            <li><a href="Contact.html">Контакти</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Laptop Catalog Page -->
+
+  <div class="page-header">
+    <h1>Ноутбуки</h1>
+</div>
+
+  <section id="catalog" class="catalog-section">
+    <div class="container">
+      <h1 class="section-title-center">Каталог ноутбуків в наявності</h1>
+  
+      <!-- Filters -->
+      <div class="filters">
+        <select class="filter-select">
+          <option value="">Виробник</option>
+          <option value="hp">HP</option>
+          <option value="lenovo">Lenovo</option>
+          <option value="asus">ASUS</option>
+          <option value="acer">Acer</option>
+          <option value="dell">Dell</option>
+        </select>
+  
+        <select class="filter-select">
+          <option value="">Стан</option>
+          <option value="new">Новий</option>
+          <option value="used">Б/в</option>
+          <option value="refurbished">Відновлений</option>
+        </select>
+  
+        <input type="range" min="5000" max="50000" step="500" class="price-range" />
+        <label class="price-label">Ціна: до <span id="priceValue">50000</span> грн</label>
+      </div>
+  
+      <!-- Product Cards -->
+      <div class="product-grid">
+        <!-- Laptop Card 1 -->
+        <div class="product-card">
+          <img src="../img/laptop1.jpg" alt="Lenovo IdeaPad 3" class="product-image" />
+          <h3 class="product-name">Lenovo IdeaPad 3</h3>
+          <ul class="product-specs">
+            <li>Intel i5-1135G7, 8GB RAM, SSD 256GB</li>
+            <li>15.6" FHD, Windows 11</li>
+            <li>Стан: Новий</li>
+          </ul>
+          <div class="product-price">17 999 грн</div>
+          <button class="btn btn-primary">Залишити заявку</button>
+        </div>
+  
+        <!-- Laptop Card 2 -->
+        <div class="product-card">
+          <img src="../img/laptop2.jpg" alt="HP Pavilion 15" class="product-image" />
+          <h3 class="product-name">HP Pavilion 15</h3>
+          <ul class="product-specs">
+            <li>Ryzen 5 5500U, 16GB RAM, SSD 512GB</li>
+            <li>15.6" IPS FHD, AMD Vega</li>
+            <li>Стан: Відновлений</li>
+          </ul>
+          <div class="product-price">19 499 грн</div>
+          <button class="btn btn-primary">Залишити заявку</button>
+        </div>
+  
+        <!-- Laptop Card 3 -->
+        <div class="product-card">
+          <img src="../img/laptop3.jpg" alt="ASUS VivoBook" class="product-image" />
+          <h3 class="product-name">ASUS VivoBook 14</h3>
+          <ul class="product-specs">
+            <li>Intel i3-1115G4, 8GB RAM, SSD 256GB</li>
+            <li>14" HD, легкий корпус</li>
+            <li>Стан: Б/в</li>
+          </ul>
+          <div class="product-price">13 250 грн</div>
+          <button class="btn btn-primary">Залишити заявку</button>
+        </div>
+      </div>
+  
+      <!-- Add More Cards -->
+  
+      <!-- Contact Buttons -->
+      <div class="messenger-links">
+        <a href="https://t.me/yourtelegramusername" class="btn-messenger tg">Написати в Telegram</a>
+        <a href="viber://chat?number=+380xxxxxxxxx" class="btn-messenger viber">Написати в Viber</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">Головна</a>
+            <a href="#services">Послуги</a>
+            <a href="#programming">Програмування</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </div>
+        <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
+    </div>
+</footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Каталог ноутбуків, ремонту, налаштування ПЗ та програмування під замовлення. Купити ноутбук та залишити заявку на ремонт." />
+  <meta name="keywords" content="ноутбуки, ремонт ПК, програмування, каталог ноутбуків, техніка, комп'ютерні послуги" />
+  <meta name="author" content="TechKnight" />
+  <title>Про нас - Комп'ютерна Майстерня</title>
+  <link rel="stylesheet" href="../css/style.css" />
+    <style>
+    
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Tech<span>Knight</span></a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="#" class="active">Про нас</a></li>
+            <li class="has-submenu">
+              <a href="#services" class="nav__link">Послуги</a>
+              <button class="submenu-toggle js-submenu-toggle" aria-label="Відкрити підменю">▾</button>
+              <ul class="submenu">
+                <li><a href="#repai">Ремонт ПК та ноутбуків</a></li>
+                <li><a href="#software">Налаштування ПЗ</a></li>
+                <li><a href="#programming">Програмування під замовлення</a></li>
+              </ul>
+            </li>
+            <li><a href="OrderForRepair.html">Залишити заявку</a></li>
+            <li><a href="laptop.html">Каталог ноутбуків</a></li>
+            <li><a href="#">Конфігуратор ПК</a></li>
+            <li><a href="Contact.html">Контакти</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="catalog" class="page-header">
+    <div class="container">
+      <h1>Конфігуратор ПК</h1>
+      </div>
+      </section>
+  <div class="container">
+    <div class="pc-configurator-form">
+        <h2 class="section-title-center">Комплектуючі</h2>
+        
+        <div class="pc-config-warning" id="compatibilityWarning">
+            Попередження про несумісність компонентів!
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="cpu">Процесор:</label>
+            <select id="cpu" onchange="updateConfiguration()">
+                <option value="">Виберіть процесор</option>
+                <option value="Intel Core i3-12100F|3200">Intel Core i3-12100F - 3200 грн</option>
+                <option value="Intel Core i5-12400F|5500">Intel Core i5-12400F - 5500 грн</option>
+                <option value="Intel Core i7-12700K|12500">Intel Core i7-12700K - 12500 грн</option>
+                <option value="AMD Ryzen 5 5600X|6800">AMD Ryzen 5 5600X - 6800 грн</option>
+                <option value="AMD Ryzen 7 5800X|11200">AMD Ryzen 7 5800X - 11200 грн</option>
+                <option value="AMD Ryzen 9 5900X|16500">AMD Ryzen 9 5900X - 16500 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="motherboard">Материнська плата:</label>
+            <select id="motherboard" onchange="updateConfiguration()">
+                <option value="">Виберіть материнську плату</option>
+                <option value="ASUS PRIME B660M-A|4100|Intel">ASUS PRIME B660M-A (Intel) - 4100 грн</option>
+                <option value="MSI PRO Z690-A|7200|Intel">MSI PRO Z690-A (Intel) - 7200 грн</option>
+                <option value="Gigabyte B660 GAMING X|5600|Intel">Gigabyte B660 GAMING X (Intel) - 5600 грн</option>
+                <option value="ASUS TUF GAMING B550-PLUS|4500|AMD">ASUS TUF GAMING B550-PLUS (AMD) - 4500 грн</option>
+                <option value="MSI MAG B550 TOMAHAWK|5900|AMD">MSI MAG B550 TOMAHAWK (AMD) - 5900 грн</option>
+                <option value="Gigabyte X570 AORUS ELITE|7800|AMD">Gigabyte X570 AORUS ELITE (AMD) - 7800 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="ram">Оперативна пам'ять:</label>
+            <select id="ram" onchange="updateConfiguration()">
+                <option value="">Виберіть оперативну пам'ять</option>
+                <option value="Crucial 16GB (2x8GB) DDR4-3200|1800">Crucial 16GB (2x8GB) DDR4-3200 - 1800 грн</option>
+                <option value="Kingston FURY Beast 16GB (2x8GB) DDR4-3600|2300">Kingston FURY Beast 16GB (2x8GB) DDR4-3600 - 2300 грн</option>
+                <option value="G.Skill Trident Z RGB 32GB (2x16GB) DDR4-3600|4500">G.Skill Trident Z RGB 32GB (2x16GB) DDR4-3600 - 4500 грн</option>
+                <option value="Corsair Vengeance 32GB (2x16GB) DDR4-3200|4200">Corsair Vengeance 32GB (2x16GB) DDR4-3200 - 4200 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="gpu">Відеокарта:</label>
+            <select id="gpu" onchange="updateConfiguration()">
+                <option value="">Виберіть відеокарту</option>
+                <option value="NVIDIA GeForce RTX 3050 8GB|9800">NVIDIA GeForce RTX 3050 8GB - 9800 грн</option>
+                <option value="NVIDIA GeForce RTX 3060 12GB|14500">NVIDIA GeForce RTX 3060 12GB - 14500 грн</option>
+                <option value="NVIDIA GeForce RTX 3070 8GB|22000">NVIDIA GeForce RTX 3070 8GB - 22000 грн</option>
+                <option value="AMD Radeon RX 6600 8GB|11000">AMD Radeon RX 6600 8GB - 11000 грн</option>
+                <option value="AMD Radeon RX 6700 XT 12GB|18500">AMD Radeon RX 6700 XT 12GB - 18500 грн</option>
+                <option value="AMD Radeon RX 6800 XT 16GB|27000">AMD Radeon RX 6800 XT 16GB - 27000 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="storage">Накопичувач:</label>
+            <select id="storage" onchange="updateConfiguration()">
+                <option value="">Виберіть накопичувач</option>
+                <option value="Samsung 970 EVO 500GB NVMe SSD|2200">Samsung 970 EVO 500GB NVMe SSD - 2200 грн</option>
+                <option value="Samsung 980 PRO 1TB NVMe SSD|4800">Samsung 980 PRO 1TB NVMe SSD - 4800 грн</option>
+                <option value="Western Digital Blue 1TB SATA SSD|2900">Western Digital Blue 1TB SATA SSD - 2900 грн</option>
+                <option value="Seagate Barracuda 2TB HDD|1700">Seagate Barracuda 2TB HDD - 1700 грн</option>
+                <option value="Crucial MX500 1TB SATA SSD|2800">Crucial MX500 1TB SATA SSD - 2800 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="psu">Блок живлення:</label>
+            <select id="psu" onchange="updateConfiguration()">
+                <option value="">Виберіть блок живлення</option>
+                <option value="Corsair RM550x 550W 80+ Gold|2900">Corsair RM550x 550W 80+ Gold - 2900 грн</option>
+                <option value="EVGA SuperNOVA 650 GA 650W 80+ Gold|3500">EVGA SuperNOVA 650 GA 650W 80+ Gold - 3500 грн</option>
+                <option value="Seasonic FOCUS GX-750 750W 80+ Gold|4200">Seasonic FOCUS GX-750 750W 80+ Gold - 4200 грн</option>
+                <option value="be quiet! Straight Power 11 850W 80+ Gold|5500">be quiet! Straight Power 11 850W 80+ Gold - 5500 грн</option>
+            </select>
+        </div>
+        
+        <div class="pc-config-group">
+            <label for="case">Корпус:</label>
+            <select id="case" onchange="updateConfiguration()">
+                <option value="">Виберіть корпус</option>
+                <option value="NZXT H510|2900">NZXT H510 - 2900 грн</option>
+                <option value="Corsair 4000D Airflow|3800">Corsair 4000D Airflow - 3800 грн</option>
+                <option value="Fractal Design Meshify C|4200">Fractal Design Meshify C - 4200 грн</option>
+                <option value="Phanteks Eclipse P400A|3100">Phanteks Eclipse P400A - 3100 грн</option>
+                <option value="be quiet! Pure Base 500DX|4500">be quiet! Pure Base 500DX - 4500 грн</option>
+            </select>
+        </div>
+    </div>
+    
+    <section class="configurator-order">
+        <div class="config-card">
+            <h2 class="form-title">Ваша конфігурація</h2>
+            <div id="configSummary" class="config-summary">
+                <p>Тут будуть відображені обрані компоненти.</p>
+            </div>
+            <div class="config-price" id="totalPrice">
+                Загальна ціна: 0 грн
+            </div>
+        </div>
+    
+        <div class="order-form-card">
+            <h3 class="form-title">Форма замовлення</h3>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Адреса доставки:</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" id="submitButton" class="btn-primary">Оформити замовлення</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">Головна</a>
+            <a href="#services">Послуги</a>
+            <a href="#programming">Програмування</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </div>
+        <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
+    </div>
+</footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/pcConfig.js"></script>
+</body>
+</html>

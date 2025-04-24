@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Каталог ноутбуків, ремонту, налаштування ПЗ та програмування під замовлення. Купити ноутбук та залишити заявку на ремонт." />
+  <meta name="keywords" content="ноутбуки, ремонт ПК, програмування, каталог ноутбуків, техніка, комп'ютерні послуги" />
+  <meta name="author" content="TechKnight" />
+  <title>Про нас - Комп'ютерна Майстерня</title>
+  <link rel="stylesheet" href="../css/style.css" />
+    <style>
+    
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Tech<span>Knight</span></a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="#" class="active">Про нас</a></li>
+            <li class="has-submenu">
+              <a href="#services" class="nav__link">Послуги</a>
+              <button class="submenu-toggle js-submenu-toggle" aria-label="Відкрити підменю">▾</button>
+              <ul class="submenu">
+                <li><a href="#repai">Ремонт ПК та ноутбуків</a></li>
+                <li><a href="#software">Налаштування ПЗ</a></li>
+                <li><a href="#programming">Програмування під замовлення</a></li>
+              </ul>
+            </li>
+            <li><a href="OrderForRepair.html">Залишити заявку</a></li>
+            <li><a href="laptop.html">Каталог ноутбуків</a></li>
+            <li><a href="pcConfig.html">Конфігуратор ПК</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="contact-page">
+    <div class="contact-header">
+        <h1>Контакти</h1>
+        <p>Зв'яжіться з нами через зручний для вас канал!</p>
+    </div>
+
+    <div class="contact-info">
+        <div class="phone">
+            <h2>Телефон</h2>
+            <p><a href="tel:+380XXXXXXXXX">+38 (XXX) XXX-XX-XX</a></p>
+            <button class="call-btn" onclick="window.location.href='tel:+380XXXXXXXXX'">Подзвонити</button>
+        </div>
+
+        <div class="social-media">
+            <h2>Ми в соцмережах</h2>
+            <ul>
+                <li><a href="https://t.me/yourcompany" target="_blank">Telegram</a></li>
+                <li><a href="https://wa.me/yourcompany" target="_blank">Viber</a></li>
+                <li><a href="https://instagram.com/yourcompany" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="working-hours">
+            <h2>Графік роботи</h2>
+            <p>Пн - Пт: 9:00 - 18:00</p>
+            <p>Сб - Нд: Вихідний</p>
+        </div>
+
+        <div class="address">
+            <h2>Адреса</h2>
+            <p>вул. Технічна, 12, Київ, Україна</p>
+            <div id="google-map"></div>
+        </div>
+
+        <div class="question-form">
+            <h2>Поставити питання</h2>
+            <form id="questionForm">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="question">Ваше питання:</label>
+                    <textarea id="question" required></textarea>
+                </div>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">Головна</a>
+            <a href="#services">Послуги</a>
+            <a href="#programming">Програмування</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </div>
+        <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
+    </div>
+</footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/pcConfig.js"></script>
+</body>
+</html>

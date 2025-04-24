@@ -1,6 +1,14 @@
  // Mobile menu toggle
  document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('mainMenu').classList.toggle('show');
+
+    document.querySelectorAll('.js-submenu-toggle').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          const submenu = btn.nextElementSibling; // .js-submenu
+          submenu.classList.toggle('js-open');
+        });
+      });
 });
 
 // Smooth scrolling for anchor links
@@ -72,4 +80,24 @@ window.addEventListener('scroll', function() {
             link.classList.add('active');
         }
     });
+});
+
+// Ініціалізація Google Maps
+function initMap() {
+    const location = { lat: 50.4501, lng: 30.5236 }; // Приклад координат для Києва
+    const map = new google.maps.Map(document.getElementById("google-map"), {
+        zoom: 14,
+        center: location,
+    });
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+}
+
+// Обробка форми питання
+document.getElementById('questionForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Ваше питання надіслано!');
+    document.getElementById('questionForm').reset();
 });

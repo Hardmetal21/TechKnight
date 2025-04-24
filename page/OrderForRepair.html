@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnight - Професійний ремонт та збірка комп'ютерної техніки</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-content">
+            <a href="#" class="logo">Tech<span>Knight</span></a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav>
+              <ul id="mainMenu">
+                <li><a href="../index.html" class="active">Головна</a></li>
+                <li><a href="about_us.html">Про нас</a></li>
+                <li class="has-submenu">
+                    <a href="#services" class="nav__link">Послуги</a>
+                    <button class="submenu-toggle js-submenu-toggle" aria-label="Відкрити підменю">▾</button>
+                    <ul class="submenu">
+                      <li><a href="#repair">Ремонт ПК та ноутбуків</a></li>
+                      <li><a href="#software">Налаштування ПЗ</a></li>
+                      <li><a href="#programming">Програмування під замовлення</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#">Залишити заявку</a></li>
+                <li><a href="laptop.html">Каталог ноутбуків</a></li>
+                <li><a href="pcConfig.html">Конфігуратор ПК</a></li>
+                <li><a href="Contact.html">Контакти</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Залишити заявку</h1>
+        <p>Ми зв'яжемося з вами найближчим часом, щоб уточнити деталі</p>
+    </div>
+</section>
+
+<!-- Request Form Section -->
+<section class="main-content">
+    <div class="container">
+        <div class="repair-form">
+            <h2 class="form-title">Швидка заявка на ремонт</h2>
+            <form id="quickRequestForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="userName" class="form-label">Ім’я *</label>
+                    <input type="text" id="userName" name="userName" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userPhone" class="form-label">Телефон *</label>
+                    <input type="tel" id="userPhone" name="userPhone" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deviceType" class="form-label">Тип техніки *</label>
+                    <select id="deviceType" name="deviceType" class="form-select" required>
+                        <option value="">Оберіть тип техніки</option>
+                        <option value="notebook">Ноутбук</option>
+                        <option value="pc">Комп’ютер</option>
+                        <option value="tablet">Планшет</option>
+                        <option value="phone">Смартфон</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="shortDescription" class="form-label">Короткий опис проблеми *</label>
+                    <textarea id="shortDescription" name="shortDescription" class="form-textarea" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="mediaUpload" class="form-label">Прикріпити фото або відео</label>
+                    <input type="file" id="mediaUpload" name="mediaUpload" class="form-file" accept="image/*,video/*" multiple>
+                    <small class="form-text">Максимум 3 файли (фото або відео)</small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Надіслати</button>
+                </div>
+
+                <div id="confirmationMessage" style="display:none; margin-top: 1rem; color: green;">
+                    ✅ Очікуйте дзвінка найближчим часом!
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Головна</a>
+                <a href="#services">Послуги</a>
+                <a href="#programming">Програмування</a>
+                <a href="#about">Про нас</a>
+                <a href="#contact">Контакти</a>
+            </div>
+            <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
