@@ -7,7 +7,9 @@
   <meta name="keywords" content="ноутбуки, ремонт ПК, програмування, каталог ноутбуків, техніка, комп'ютерні послуги" />
   <meta name="author" content="TechKnight" />
   <title>Про нас - Комп'ютерна Майстерня</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css" />
+ 
     <style>
     
     </style>
@@ -35,7 +37,7 @@
             <li><a href="laptop.html">Каталог ноутбуків</a></li>
             <li><a href="pcConfig.html">Конфігуратор ПК</a></li>
             <li><a href="#">Контакти</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
           </ul>
         </nav>
       </div>
@@ -47,58 +49,91 @@
         <p>Зв'яжіться з нами через зручний для вас канал!</p>
     </div>
 
-    <div class="contact-info">
-        <div class="phone">
-            <h2>Телефон</h2>
-            <p><a href="tel:+380XXXXXXXXX">+38 (XXX) XXX-XX-XX</a></p>
-            <button class="call-btn" onclick="window.location.href='tel:+380XXXXXXXXX'">Подзвонити</button>
-        </div>
+    <section class="contact-page">
 
-        <div class="social-media">
-            <h2>Ми в соцмережах</h2>
-            <ul>
-                <li><a href="https://t.me/yourcompany" target="_blank">Telegram</a></li>
-                <li><a href="https://wa.me/yourcompany" target="_blank">Viber</a></li>
-                <li><a href="https://instagram.com/yourcompany" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
+      <h1>Зв'яжіться з нами</h1>
+  
+      <!-- 📞 Телефон -->
+      <div class="contact-block">
+          <h2>Телефон</h2>
+          <p>+38 (093) 123-45-67</p>
+          <a href="tel:+380931234567" class="call-btn">
+              <i class="fas fa-phone-alt"></i> Подзвонити
+          </a>
+      </div>
+  
+      <!-- 🌐 Соцмережі -->
+      <div class="contact-block">
+          <h2>Ми в соцмережах</h2>
+          <div class="social-media">
+              <a href="https://t.me/yourname" class="social-btn telegram" target="_blank">
+                  <i class="fab fa-telegram-plane"></i> Telegram
+              </a>
+              <a href="viber://chat?number=+380931234567" class="social-btn viber" target="_blank">
+                  <i class="fab fa-viber"></i> Viber
+              </a>
+              <a href="https://instagram.com/yourname" class="social-btn instagram" target="_blank">
+                  <i class="fab fa-instagram"></i> Instagram
+              </a>
+          </div>
+      </div>
+  
+      <!-- 🕒 Графік роботи -->
+      <div class="contact-block">
+          <h2>Графік роботи</h2>
+          <p>Пн–Пт: 09:00 – 18:00<br>Сб: 10:00 – 15:00<br>Нд: вихідний</p>
+      </div>
+  
+      <!-- 🧭 Адреса -->
+      <div class="contact-block">
+          <h2>Наша адреса</h2>
+          <p>м. Київ, вул. Прикладна, 12<br>Пункт прийому техніки</p>
+      </div>
+  
+      <!-- 🗺 Карта -->
+      <div class="contact-block">
+          <h2>Ми на мапі</h2>
+          <div id="google-map">
+              <!-- Вставте ваш Google Maps iframe -->
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=..." 
+                  width="100%" height="300" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+      </div>
+  
+      <!-- ❓ Форма питання -->
+      <div class="contact-block question-form">
+          <h2>Поставити питання</h2>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="name">Ім’я:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+  
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email">
+              </div>
+  
+              <div class="form-group">
+                  <label for="message">Ваше питання:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+  
+              <button type="submit">Надіслати</button>
+          </form>
+      </div>
+  
+  </section>
+  </section>
+  
 
-        <div class="working-hours">
-            <h2>Графік роботи</h2>
-            <p>Пн - Пт: 9:00 - 18:00</p>
-            <p>Сб - Нд: Вихідний</p>
-        </div>
-
-        <div class="address">
-            <h2>Адреса</h2>
-            <p>вул. Технічна, 12, Київ, Україна</p>
-            <div id="google-map"></div>
-        </div>
-
-        <div class="question-form">
-            <h2>Поставити питання</h2>
-            <form id="questionForm">
-                <div class="form-group">
-                    <label for="name">Ваше ім'я:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Ваш Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="question">Ваше питання:</label>
-                    <textarea id="question" required></textarea>
-                </div>
-                <button type="submit">Відправити</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-</div>
-
-<footer>
+  <footer>
     <div class="container">
         <div class="footer-links">
             <a href="#">Головна</a>
@@ -109,7 +144,7 @@
         </div>
         <p class="copyright">© 2025 TechKnight. Всі права захищені.</p>
     </div>
-</footer>
+  </footer>
 
   <script src="../js/script.js"></script>
   <script src="../js/pcConfig.js"></script>
