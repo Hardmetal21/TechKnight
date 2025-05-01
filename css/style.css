@@ -114,6 +114,9 @@ nav ul li a:hover {
   
   /* Класи для мобільного */
   @media (max-width: 768px) {
+    .mobile-margin {
+      margin: 30px 0 0 0;
+    }
     .has-submenu {
         display: flex;
         align-items: center;
@@ -514,10 +517,10 @@ footer {
     }
     
     .hero {
-        height: 500px;
-        margin-top: 140px;
+        margin-top: 115px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
-    
     .about-content,
     .contact-content {
         grid-template-columns: 1fr;
@@ -527,6 +530,28 @@ footer {
         height: 300px;
         order: -1;
     }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 2rem;
+  }
+  
+  .footer-links a {
+      color: white;
+      margin: 1rem 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+
+  .hero__buttons a {
+    margin: 0.5rem 0.5rem;
+  }
+
+  .about-text .btn{
+    align-content: center;  
+  }
 }
 
 /* services page */
@@ -819,6 +844,12 @@ footer {
     .gallery-row img {
       width: 100%;
     }
+    .page-header {
+      margin-top: 40px;
+    }
+    .service-list {
+      grid-template-columns: 1fr;
+    }
   }
   /* -- request page */
 
@@ -1028,6 +1059,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        margin: none;
     }
 }
 
@@ -1266,6 +1298,7 @@ footer {
 
   @media (max-width: 480px) {
     .section-title {
+      margin-top: 4rem;
       font-size: 2rem;
     }
     .product-name {
